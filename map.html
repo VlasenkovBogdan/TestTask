@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>@import url(styles.css);</style>
+    <script src="map.js"></script>
+    <script src="data.json"></script>
+</head>
+<body   onload="start()">
+
+    <div id="container" >
+        <img src="map.svg" id="image" >
+        <div id="amount" style="border: solid; height: 30px; width: 300px;">Количество товара на метке</div>
+    </div>
+    <div id="coords" style="border: solid; height: 30px; width: 400px;">X:Y</div>
+    <button onclick="add()"  id="addButton" >Поставить точку</button>
+    <button onclick="remove1()" id="removeButton">Удалить точку</button>
+    <button id="exit" onclick="exit()">Выход</button>
+    
+</body>
+</html>
