@@ -251,7 +251,7 @@ let jsonFile = [
     },
     
 ]
-let amount = jsonFile[i].amount;
+
 
 
 function start(){
@@ -260,7 +260,7 @@ function start(){
         let img = document.createElement('img');
         img.src = "marker.png";
         img.id = jsonFile[i].name;  
-       
+       let amount = jsonFile[i].amount;
         document.getElementById('container').append(img);
         let id = document.getElementById(img.id);
         id.style.position = 'absolute';
